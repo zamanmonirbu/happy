@@ -1,5 +1,6 @@
 import React from 'react';
 import InstagramFeed from '../../Middle/ContentView/ContentView';
+import EditProfile from './EditProfile';
 
 const UserProfile = () => {
     return (
@@ -12,7 +13,7 @@ const UserProfile = () => {
                 <InstagramFeed/>
             </div>
             <div className="w-3/6 bg-gray-700 p-4 sticky top-0 rounded-xl">
-               
+               <EditProfile/>
             </div>
         </div>
 

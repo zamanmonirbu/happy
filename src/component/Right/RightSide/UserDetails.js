@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const UserDetails = () => {
   const [totalTime, setTotalTime] = useState(0);
@@ -34,12 +35,12 @@ const UserDetails = () => {
     <div className="flex flex-col">
     <div className="flex">
       <div className="w-1/3 h-32 bg-blue-400 m-1 rounded border-2xl p-4">
-        <button className="focus:outline-none focus:ring focus:border-blue-300 text-white flex items-center">
-          <img className="h-16 w-16 rounded-full mr-2" src={user?.img} alt={`Profile of ${user?.name}`} />
+        <Link to='/user/profile' className=" text-white flex items-center">
+          <img className="h-16 w-16 rounded-full mr-2" src="https://lh3.googleusercontent.com/ogw/ANLem4a-BhZdfCHuEJkUdjdhjUfzXYpjEq-KeRJ98sT4rg=s32-c-mo" alt={`Profile of ${user?.name}`} />
           <div>
             <p className="font-bold text-lg uppercase">{user?.name}</p>
           </div>
-        </button>
+        </Link>
       </div>
       <div className="w-1/3 h-32 bg-green-400 m-1 rounded border-2xl p-4">
         <p className="text-white">
